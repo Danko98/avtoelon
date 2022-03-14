@@ -17,6 +17,8 @@ public class Brand {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
 
+    long sss;
+
     @Column(nullable = false)
     String name;
 
