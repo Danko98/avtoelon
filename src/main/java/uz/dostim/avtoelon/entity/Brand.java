@@ -18,6 +18,8 @@ public class Brand {
     long id;
 
     long sss;
+    long ff;
+    long aa;
 
     @Column(nullable = false)
     String name;
