@@ -21,6 +21,8 @@ public class Brand {
     long ff;
     long aa;
 
+    boolean eee;
+
     @Column(nullable = false)
     String name;
 
