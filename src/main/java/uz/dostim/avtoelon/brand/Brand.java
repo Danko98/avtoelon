@@ -1,8 +1,9 @@
-package uz.dostim.avtoelon.entity;
+package uz.dostim.avtoelon.brand;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import uz.dostim.avtoelon.entity.Model;
 
 import javax.persistence.*;
 import java.util.List;
@@ -11,16 +12,16 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class Region {
+public class Brand {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    Long id;
 
     @Column(nullable = false)
     String name;
 
     @OneToMany
-    List<City> cityList;
+    List<Model> modelList;
 
 }
