@@ -1,9 +1,11 @@
-package uz.dostim.avtoelon.entity;
+package uz.dostim.avtoelon.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.context.annotation.Lazy;
+import uz.dostim.avtoelon.entity.Announce;
+import uz.dostim.avtoelon.entity.Region;
 
 import javax.persistence.*;
 import java.util.List;
@@ -16,7 +18,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    Long id;
 
     @Column(nullable = false, unique = true)
     String phoneNumber;

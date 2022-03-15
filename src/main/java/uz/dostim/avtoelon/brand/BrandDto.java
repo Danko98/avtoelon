@@ -1,4 +1,4 @@
-package uz.dostim.avtoelon.dto;
+package uz.dostim.avtoelon.brand;
 
 public class BrandDto {
     private String name;
